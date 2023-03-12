@@ -10,6 +10,7 @@ const AppliedJobs = () => {
   } = useSelector((state) => state.auth);
   const { data, isLoading } = useGetAppliedJobsQuery(email);
 
+
   if (isLoading) {
     return <Loading />;
   }
